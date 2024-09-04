@@ -4,6 +4,7 @@
  * To contain application wide settings, routes, state, etc.
  */
 
+
 import React from "react";
 
 import About from "./Components/About";
@@ -24,12 +25,12 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
+  name: "Nidhi Singh Bhadoria",
+  title: "Front-end Developer (React.js)",
+  email: "teamguffonidhi28@gmail.com",
+  gitHub: "/Nidhi28fg/",
   instagram: "microsoft",
-  linkedIn: "satyanadella",
+  linkedIn: "nidhi-singh-bhadoria-111633145/",
   medium: "",
   twitter: "microsoft",
   youTube: "Code",
