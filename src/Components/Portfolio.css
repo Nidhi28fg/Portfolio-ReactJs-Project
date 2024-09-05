@@ -1,0 +1,75 @@
+.portfolio-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .portfolio-title {
+    text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      animation: fadeIn 2s ease-in-out;
+      padding-bottom: 20px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .image-container {
+    max-width: 90%;
+    justify-self: center;
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-list {
+    display: grid;
+    gap: 2rem;
+    width: 90%;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .project-title:hover {
+    color: #0056b3;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+  }
+  

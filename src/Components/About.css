@@ -1,6 +1,5 @@
-/* About Section */
 .about-section {
-    /* position: relative; */
+    position: relative;
     padding: 2rem 1rem;
     text-align: center;
   }
@@ -20,7 +19,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     padding: 3rem;
     margin: -10rem auto 0;
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(86, 80, 80, 0.778);
     animation: fadeIn 1s ease-in-out;
@@ -28,18 +27,22 @@
   
   /* Typography */
   .about-content h2 {
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    margin-bottom: 1rem;
+      text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        animation: fadeIn 2s ease-in-out;
+        padding-bottom: 20px;
   }
   
   .description, .quote {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
+    line-height: 2;
     color: #555;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
   }
   
   .divider {
@@ -51,19 +54,20 @@
   /* Skills Grid */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    gap: 1rem;
     margin: 2rem 0;
   }
   
   .skill-item {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     background-color: hwb(137 15% 5% / 0.467);
     padding: 0.5rem;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(86, 80, 80, 0.778);
+    box-shadow: #716767a5;
     transition: transform 0.3s ease;
+    list-style-type: none; 
   }
   
   .skill-item:hover {
