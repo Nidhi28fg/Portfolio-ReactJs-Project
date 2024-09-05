@@ -8,6 +8,7 @@
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
+import "./Home.css";
 
 /**
  * Home background image
@@ -26,14 +27,21 @@ const imageAltText = "Adult female in office setting leaning against a glass wal
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+    <section id="home" className="home-section">
+      <div className="home-background">
+        <img className="background-image" src={image} alt={imageAltText} />
+        <div className="overlay"></div> {/* Add a dark overlay over the image */}
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+
+      <div className="content">
+        <h1 className="name">{name}</h1>
+        <h2 className="title">{title}</h2>
+      </div>
+
+      <div className="arrow">
+        <a href="#next-section">
+          <img src={arrowSvg} alt="Scroll down" className="arrow-icon" />
+        </a>
       </div>
     </section>
   );

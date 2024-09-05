@@ -60,11 +60,11 @@ const Footer = (props) => {
           gap: "2.5rem",
         }}
       >
-        {email && (
-          <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
-        )}
+       {email && (
+  <a href={`mailto:${email}`} >
+    <img src={envelopeIcon} alt="email" className="socialIcon" />
+  </a>
+)}
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />

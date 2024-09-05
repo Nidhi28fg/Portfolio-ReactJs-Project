@@ -1,0 +1,90 @@
+/* Home.css */
+
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+  
+  .content {
+    z-index: 1;
+  }
+  
+  .name {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease-in-out 1s;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 2rem;
+    animation: bounce 2s infinite;
+  }
+  
+  .arrow-icon {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
+  }
+  
+  /* Smooth bounce animation for arrow */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  /* Smooth fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

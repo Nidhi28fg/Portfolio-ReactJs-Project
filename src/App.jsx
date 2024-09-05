@@ -29,11 +29,11 @@ const siteProps = {
   title: "Front-end Developer (React.js)",
   email: "teamguffonidhi28@gmail.com",
   gitHub: "/Nidhi28fg/",
-  instagram: "microsoft",
+  instagram: "/react.jsinterview/",
   linkedIn: "nidhi-singh-bhadoria-111633145/",
-  medium: "",
+  medium: "https://medium.com/@guffosolvedassignment",
   twitter: "microsoft",
-  youTube: "Code",
+  youTube: "guffosolved",
 };
 
 const primaryColor = "#4E567E";

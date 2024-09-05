@@ -1,11 +1,5 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
-
 import React from "react";
-
+import "./About.css";
 /**
  * About background image
  *
@@ -18,7 +12,7 @@ import React from "react";
  */
 import image from "../images/motion-background.jpg";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "light green and cream background";
 
 /**
  * Sort description that expands on your title on the Home component.
@@ -39,6 +33,9 @@ const skillsList = [
   "CSS3",
   "Bootstrap",
   "React and Redux",
+  "Typescript",
+  "SEO",
+  "Digital Marketing",
 ];
 
 /**
@@ -47,39 +44,25 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my Front-end Developer experience I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
+    <section className="about-section" id="about">
+      <div className="image-overlay"> </div><img className="background" src={image} alt={imageAltText} />
+      <div/>
+      <div className="about-content"
       >
         <h2>About Myself</h2>
-        <p className="large">{description}</p>
+        <p className="description">{description}</p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
+        <ul className="skills-grid" >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li key={skill} className="skill-item">{skill}</li>
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p className="quote">{detailOrQuote}</p>
       </div>
     </section>
   );
