@@ -24,19 +24,21 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "Greetings. I am Nidhi Singh Bhadoria. I am interested in the field of web development, and I am proficient in HTML, CSS, Tailwind, Javascript, and React.js. I am eager to collaborate on projects. Please feel free to contact me at teamguffonidhi28@gmail.com. I look forward to hearing from you.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "React.Js",
+  "Tailwind",
+  "GitHub",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Bootstrap",
+  "React and Redux",
 ];
 
 /**
